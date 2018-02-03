@@ -1,19 +1,17 @@
-<nav class="nav-container">
-  <div class="nav-wrapper container">
-    <a id="logo-container" routerLink="/" class="brand-logo"><img src="http://oi66.tinypic.com/2vigqkh.jpg" height="42" width="197" alt="logo"/></a>
-    <ul class="right nav-ul" *ngIf="logged">
-      <li><span class="chip">Welcome, <b>{{username}}</b></span></li>
-      <li *ngIf="admin"><a routerLink="/add-product">Add Product</a></li>
-      <li *ngIf="admin"><a routerLink="/orders/manage">Manage Orders</a></li>
-      <li><a routerLink="/catalog">Catalog</a></li>
-      <li><a routerLink="/my-orders">My Orders</a></li>
-      <li><a routerLink="/logout" (click)="logOut()">Log Out</a></li>
-    </ul>
-    <ul class="right nav-ul" *ngIf="!logged">
-      <li><a routerLink="/catalog">Catalog</a></li>
-      <li><a routerLink="/login">Login</a></li>
-      <li><a routerLink="/register">Register</a></li>
-    </ul>
+<div class="topnav" id="myTopnav">
+  <div *ngIf="!logged">
+    <a routerLink="/catalog">Catalog</a>
+    <a routerLink="/login">Login</a>
+    <a routerLink="/register">Register</a>
   </div>
-</nav>
+  <div *ngIf="logged">
+    <span *ngIf="admin"><a routerLink="/add-product">Add Product</a></span>
+    <span *ngIf="admin"><a routerLink="/orders/manage">Manage Orders</a></span>
+    <a routerLink="/catalog">Catalog</a>
+    <a routerLink="/my-orders">My Orders</a>
+    <a routerLink="/logout" (click)="logOut()">Log Out</a>
+  </div>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" (click)="toggleMenu()">&#9776;</a>
+</div>
+
 <router-outlet></router-outlet>
