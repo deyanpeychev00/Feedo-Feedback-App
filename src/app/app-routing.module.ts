@@ -5,15 +5,7 @@ import {ComponentsObj} from "./export/components/export-components-obj";
 const routes: Routes = [
   {path: '', component: ComponentsObj.HomePage},
   {path: 'register', component: ComponentsObj.RegisterPage},
-  {path: 'login', component: ComponentsObj.LoginPage},
-  {path: 'catalog', component: ComponentsObj.Catalog},
-  {path: 'add-product', component: ComponentsObj.AddProduct},
-  {path: 'items/details/:id', component: ComponentsObj.ItemDetails},
-  {path: 'items/edit/:id', component: ComponentsObj.EditItem},
-  {path: 'my-orders', component: ComponentsObj.MyOrders},
-  {path: 'orders/manage', component: ComponentsObj.ManageOrders},
-  {path: 'orders/edit/:id', component: ComponentsObj.ChangeOrderStatus},
-  {path: '**', component: ComponentsObj.NotFound }
+  {path: 'login', component: ComponentsObj.LoginPage}
 ];
 
 @NgModule({

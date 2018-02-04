@@ -2,12 +2,15 @@ import {Injectable} from '@angular/core';
 import {HttpClient, HttpHeaders} from "@angular/common/http";
 import {Observable} from "rxjs/Observable";
 
+const appKey = "kid_r1F8-1S8z";
+const appSecret = "1fd5800d385643c3aa218e5c2bb44d17";
+const hostURL = "https://baas.kinvey.com";
+
 @Injectable()
 export class AuthService {
   emailRegex: RegExp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-  constructor(private http: HttpClient) {
-  }
+  constructor(private http: HttpClient) {}
 
   validateRegisterForm(username, email, password, repeatedPassword) {
     if (username === '' || username === null || username === undefined || username.length < 4) {
@@ -42,23 +45,23 @@ export class AuthService {
   }
 
   register(username, email, password): Observable<any> {
-    const body = JSON.stringify({name: username, username, email, password, isAdmin: false, orders: []});
-    return this.http.post('https://baas.kinvey.com/user/kid_HJ2sgDXeM/', body, {
-      headers: new HttpHeaders().set('Authorization', 'Basic ' + btoa(`kid_HJ2sgDXeM:e3d5708e5a4e426faf65a4ec436e8507`))
+    const body = JSON.stringify({username, email, password, isAdmin: false, questions: []});
+    return this.http.post(`${hostURL}/user/${appKey}/`, body, {
+      headers: new HttpHeaders().set('Authorization', 'Basic ' + btoa(`${appKey}:${appSecret}`))
         .set('Content-Type', 'application/json')
     });
   }
 
   login(username, password): Observable<any> {
     const body = JSON.stringify({username, password});
-    return this.http.post('https://baas.kinvey.com/user/kid_HJ2sgDXeM/login', body, {
-      headers: new HttpHeaders().set('Authorization', 'Basic ' + btoa(`kid_HJ2sgDXeM:e3d5708e5a4e426faf65a4ec436e8507`))
+    return this.http.post(`${hostURL}/user/${appKey}/login`, body, {
+      headers: new HttpHeaders().set('Authorization', 'Basic ' + btoa(`${appKey}:${appSecret}`))
         .set('Content-Type', 'application/json')
     });
   }
 
   getCurrentUser(userId, authtoken): Observable<any> {
-    return this.http.get('https://baas.kinvey.com/user/kid_HJ2sgDXeM/' + userId, {
+    return this.http.get(`${hostURL}/user/${appKey}/${userId}`, {
       headers: new HttpHeaders().set('Authorization', 'Kinvey ' + authtoken)
         .set('Content-Type', 'application/json')
     });
