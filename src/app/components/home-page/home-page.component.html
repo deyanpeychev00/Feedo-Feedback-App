@@ -1,0 +1,32 @@
+<div class="content">
+  <div class="home-heading">
+    <h1>Welcome to Feedo!</h1>
+  </div>
+  <div class="home-subheading">
+    <p>Curious? Just ask!</p>
+    <p>Openly or anonymously.</p>
+  </div>
+  <div class="operational-buttons">
+    <div *ngIf="logged" class="center">
+      <div>
+        <p class="home-p">Ask your friends.</p>
+        <a class="button" href="/search">Search Users</a>
+      </div>
+   </div>
+    <div *ngIf="!logged" class="center">
+      <div>
+        <p class="home-p">New here?</p>
+        <a class="button" href="/register">Sign Up</a>
+      </div>
+      <div>
+        <p class="home-p">Already a member of <b>Feedo</b>?</p>
+        <a class="button button-rev" href="/login">Log In</a>
+      </div>
+    </div>
+  </div>
+  <div class="home-subheading">
+    <h2>About <b>Feedo</b>:</h2>
+    <p><b>"Feedo"</b> is an open source <a href="https://angular.io/" target="_blank">Angular</a> project which lets you ask your friends variable questions openly or anonymously.</p>
+    <p>Full information can be found on:  <a href="https://github.com/deyanpeychev00/Feedo-Feedback-App" target="_blank">Feedo GitHub</a></p>
+  </div>
+</div>

@@ -6,10 +6,11 @@ import {ProvidersExport} from "./export/providers/export-providers";
 // Components
 import {AppComponent} from "./app.component";
 import {ComponentsExport} from "./export/components/export-components";
+import { HomePageComponent } from './components/home-page/home-page.component';
 
 
 @NgModule({
-  declarations: [...ComponentsExport],
+  declarations: [...ComponentsExport, HomePageComponent],
   imports: [...ModulesExport],
   providers: [...ProvidersExport],
   bootstrap: [AppComponent]

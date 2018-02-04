@@ -1,14 +1,12 @@
 <div class="topnav" id="myTopnav">
   <div *ngIf="!logged">
-    <a routerLink="/catalog">Catalog</a>
     <a routerLink="/login">Login</a>
     <a routerLink="/register">Register</a>
   </div>
   <div *ngIf="logged">
-    <span *ngIf="admin"><a routerLink="/add-product">Add Product</a></span>
-    <span *ngIf="admin"><a routerLink="/orders/manage">Manage Orders</a></span>
-    <a routerLink="/catalog">Catalog</a>
-    <a routerLink="/my-orders">My Orders</a>
+    <span *ngIf="admin"><a routerLink="/manage-questions">Manage Questions</a></span>
+    <a routerLink="/profile">My Profile</a>
+    <a routerLink="/search">Search Users</a>
     <a routerLink="/logout" (click)="logOut()">Log Out</a>
   </div>
   <a href="javascript:void(0);" style="font-size:15px;" class="icon" (click)="toggleMenu()">&#9776;</a>

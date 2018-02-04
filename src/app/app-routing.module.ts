@@ -3,8 +3,7 @@ import {RouterModule, Routes} from '@angular/router';
 import {ComponentsObj} from "./export/components/export-components-obj";
 
 const routes: Routes = [
-  {path: '', redirectTo: '/map', pathMatch: 'full'},
-  {path: 'map', component: ComponentsObj.MainMap},
+  {path: '', component: ComponentsObj.HomePage},
   {path: 'register', component: ComponentsObj.RegisterPage},
   {path: 'login', component: ComponentsObj.LoginPage},
   {path: 'catalog', component: ComponentsObj.Catalog},

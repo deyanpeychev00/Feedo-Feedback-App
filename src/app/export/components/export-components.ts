@@ -1,5 +1,4 @@
 import {AppComponent} from '../.././app.component';
-import {MainMapComponent} from '../.././components/main-map/main-map.component';
 import {RegisterPageComponent} from '../.././components/register-page/register-page.component';
 import {LoginPageComponent} from '../.././components/login-page/login-page.component';
 import {CatalogComponent} from '../.././components/catalog/catalog.component';
@@ -12,10 +11,10 @@ import {SingleOrderComponent} from '../.././components/single-order/single-order
 import {ManageOrdersComponent} from '../.././components/manage-orders/manage-orders.component';
 import {ChangeOrderStatusComponent} from '../.././components/change-order-status/change-order-status.component';
 import {NotFoundComponent} from "../../components/404/404.component";
+import {HomePageComponent} from "../../components/home-page/home-page.component";
 
 export const ComponentsExport = [
   AppComponent,
-  MainMapComponent,
   RegisterPageComponent,
   LoginPageComponent,
   CatalogComponent,
@@ -27,5 +26,6 @@ export const ComponentsExport = [
   SingleOrderComponent,
   ManageOrdersComponent,
   ChangeOrderStatusComponent,
-  NotFoundComponent
+  NotFoundComponent,
+  HomePageComponent
 ];
