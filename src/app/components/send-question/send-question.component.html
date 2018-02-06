@@ -1,0 +1,25 @@
+<div class="header-wrapper">
+  <h1 class="header center white-text text-lighten-2">Send Question to {{username}}</h1>
+</div>
+<div class="text-wrapper">
+  <p><b>Please fill the form below:</b></p>
+</div>
+<br/>
+<form class="login-form col s10 offset-s1" (ngSubmit)="sendQuestion()">
+  <div class="row">
+    <i class="material-icons">edit</i> Question
+    <textarea type="text" class="form-control materialize-textarea" id="question" placeholder="Type your question..." required name="question"
+              [(ngModel)]="question"></textarea>
+  </div>
+  <div class="row">
+    <input type="checkbox" id="test5" />
+    <label for="test5">Ask anonymously</label>
+  </div>
+  <div class="row">
+    <div class="col-sm-4 col-sm-offset-4 center">
+      <button type="reset" class="btn btn-default grey" (click)="getBack()">Back</button>
+      <button type="submit" class="btn btn-primary green">Send</button>
+    </div>
+    <br><br>
+  </div>
+</form>

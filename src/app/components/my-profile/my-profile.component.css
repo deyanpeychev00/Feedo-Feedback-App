@@ -1,0 +1,26 @@
+.user-details{
+  padding-top: 0;
+  padding-bottom: 20px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.header-wrapper{
+  margin: 0;
+  background-color: #1e88e5;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.header-wrapper > h1, .header-wrapper > h3{
+  margin: 0;
+  padding: 10px;
+  color: white;
+}
+
+
+@media (max-width: 782px) {
+  .user-details{
+    padding-bottom: 20px;
+  }
+}

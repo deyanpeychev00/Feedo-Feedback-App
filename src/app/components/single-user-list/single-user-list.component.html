@@ -1,0 +1,15 @@
+<div class="col s12 m12" style="padding: 20px">
+  <div>
+    <div class="section">
+      <div class="divider"></div>
+      <div class="user-content">
+        <div class="left">
+          <span class="user-icon"><i class="material-icons">person</i>User</span> <span>{{user.username}}</span>
+        </div>
+        <div class="right">
+          <a class="btn btn-default btn-xs green" routerLink="/ask/{{user.username}}" (click)="deleteQuestion()">Ask Question</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

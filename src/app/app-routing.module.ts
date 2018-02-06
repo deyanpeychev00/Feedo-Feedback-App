@@ -5,7 +5,11 @@ import {ComponentsObj} from "./export/components/export-components-obj";
 const routes: Routes = [
   {path: '', component: ComponentsObj.HomePage},
   {path: 'register', component: ComponentsObj.RegisterPage},
-  {path: 'login', component: ComponentsObj.LoginPage}
+  {path: 'login', component: ComponentsObj.LoginPage},
+  {path: 'my-profile', component: ComponentsObj.MyProfile},
+  {path: 'my-profile-refresh', redirectTo: 'my-profile', pathMatch: 'full'},
+  {path: 'search', component: ComponentsObj.SearchUsers},
+  {path: 'ask/:username', component: ComponentsObj.SendQuestion}
 ];
 
 @NgModule({

@@ -23,20 +23,7 @@
   padding: 10px;
   color: white;
 }
-
 .row{
   padding-left: 20%;
   padding-right: 20%;
-}
-
-.register-form{
-  padding-top: 20px;
-}
-
-@media (max-width: 782px) {
-  .row{
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-
 }

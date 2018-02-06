@@ -66,4 +66,24 @@ export class AuthService {
         .set('Content-Type', 'application/json')
     });
   }
+
+  getAllUsers(authtoken): Observable<any>{
+    return this.http.get(`${hostURL}/user/${appKey}/?query={"isAdmin":false}`, {
+      headers: new HttpHeaders().set('Authorization', 'Kinvey ' + authtoken)
+        .set('Content-Type', 'application/json')
+    });
+  }
+
+  getUsersByUsername(authtoken, username): Observable<any>{
+    return this.http.get(`${hostURL}/user/${appKey}/?query={"username":{"$regex":"^${username}" }}`, {
+      headers: new HttpHeaders().set('Authorization', 'Kinvey ' + authtoken)
+        .set('Content-Type', 'application/json')
+    });
+  }
+  getSpecificUser(authtoken, username): Observable<any>{
+    return this.http.get(`${hostURL}/user/${appKey}/?query={"username":"${username}"}`, {
+      headers: new HttpHeaders().set('Authorization', 'Kinvey ' + authtoken)
+        .set('Content-Type', 'application/json')
+    });
+  }
 }

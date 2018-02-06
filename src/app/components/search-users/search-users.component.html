@@ -1,0 +1,26 @@
+<div class="header-wrapper">
+  <h1 class="header center white-text text-lighten-2">Search Users</h1>
+</div>
+<div class="text-wrapper">
+  <p><b>Please fill the search bar to search users:</b></p>
+</div>
+<div class="container">
+  <form class="search-users-form" (ngSubmit)="searchUsers()">
+    <input type="text" name="searchedUsername" placeholder="Search.. "  [(ngModel)]="searchedUsername" >
+  </form>
+  <div *ngIf="!userListLoaded">
+    <div class="progress">
+      <div class="indeterminate"></div>
+    </div>
+  </div>
+  <div *ngIf="userListLoaded" class="user-list">
+    <div *ngIf="!userList.length > 0">
+      <p>No users available.</p>
+    </div>
+    <div *ngIf="userList.length > 0">
+      <div class="user-list" *ngFor="let user of userList">
+        <app-single-user-list [user]="user"></app-single-user-list>
+      </div>
+    </div>
+  </div>
+</div>

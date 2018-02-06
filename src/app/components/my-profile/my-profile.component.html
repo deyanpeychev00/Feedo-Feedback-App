@@ -1,0 +1,64 @@
+<div class="header-wrapper">
+  <h1 class="header center white-text text-lighten-2">My Profile</h1>
+</div>
+<div class="container">
+  <div class="col s2 offset-s2 z-depth-2">
+    <div *ngIf="!profileDataLoaded">
+      <div class="progress">
+        <div class="indeterminate"></div>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div>
+        <div class="user-details">
+          <i class="material-icons red-text">face</i> Username:
+          <span class="chip">
+              {{username}}
+            </span>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div>
+        <div class="user-details">
+          <i class="material-icons green-text">language</i> Email:
+          <span class="chip">
+              {{email}}
+            </span>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div>
+        <div class="user-details">
+          <i class="material-icons blue-text">today</i> Date Registered:
+          <span class="chip">
+              {{dateRegistered}}
+            </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="header-wrapper">
+    <h3 class="header center white-text text-lighten-2">My Questions</h3>
+  </div>
+<div class="container">
+  <div class="divider col s6 offset-s2 teal-text lighten-2" style="margin-bottom:20px; "></div>
+  <div *ngIf="!questionsDataLoaded">
+    <div class="progress">
+      <div class="indeterminate"></div>
+    </div>
+  </div>
+  <div *ngIf="questionsDataLoaded">
+    <div class="row center" *ngIf="!myQuestions.length > 0">
+      You don't have any questions.
+    </div>
+    <div *ngIf="myQuestions.length > 0" class="container body-content" id="posts">
+      <div class="row" *ngFor="let question of myQuestions">
+        <app-single-question [question]="question"></app-single-question>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,39 @@
+.user-content{
+  font-size: 16px;
+}
+
+.divider{
+  margin-bottom: 39px;
+}
+.section{
+  margin-bottom: -20px;
+}
+
+.user-content span{
+  padding-left: 20px;
+  font-size: 24px;
+  font-weight: 600;
+}
+.user-content{
+  padding-bottom: 20px;
+}
+
+.user-icon{
+  border: 1px solid black;
+  padding: 5px !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  border-radius: 25px;
+}
+
+@media (max-width: 782px){
+  .divider{
+    margin-bottom: 10px;
+  }
+  .user-content{
+    padding-bottom: 60px;
+  }
+  .btn{
+    margin-top:20px;
+  }
+}

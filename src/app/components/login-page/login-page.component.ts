@@ -38,10 +38,9 @@ export class LoginPageComponent implements OnInit {
         localStorage.setItem('authtoken', data._kmd.authtoken);
         localStorage.setItem('username', data.username);
         localStorage.setItem('userId', data._id);
-        this.router.navigate(['/catalog']);
+        this.router.navigate(['/my-profile']);
       },
       err => {
-        console.log(err);
         this.toastr.errorToast((err.error.description ? err.error.description : 'Unknown error occured. Please try again'));
       });
   }
