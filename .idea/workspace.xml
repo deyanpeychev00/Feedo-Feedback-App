@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="266caf73-6a1c-409e-89f6-6d99ebc32974" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/app/components/send-question/send-question.component.ts" afterPath="$PROJECT_DIR$/src/app/components/send-question/send-question.component.ts" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/single-user-list/single-user-list.component.html" afterPath="$PROJECT_DIR$/src/app/components/single-user-list/single-user-list.component.html" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/single-question/single-question.component.ts" afterPath="$PROJECT_DIR$/src/app/components/single-question/single-question.component.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/dist/" />
@@ -18,17 +17,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app-routing.module.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/app-routing.module.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="11" column="10" lean-forward="false" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="send-question.component.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="send-question.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/components/send-question/send-question.component.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="485">
@@ -36,6 +25,26 @@
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="my-profile.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/components/my-profile/my-profile.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-113">
+              <caret line="22" column="51" lean-forward="false" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="single-question.component.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/app/components/single-question/single-question.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="483">
+              <caret line="27" column="43" lean-forward="false" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -87,16 +96,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="299">
               <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login-page.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/components/login-page/login-page.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="897">
-              <caret line="43" column="4" lean-forward="false" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="124" />
               <folding />
             </state>
           </provider>
@@ -168,7 +167,6 @@
         <option value="$PROJECT_DIR$/src/app/components/single-question/single-question.component.html" />
         <option value="$PROJECT_DIR$/src/app/components/single-question/single-question.component.css" />
         <option value="$PROJECT_DIR$/src/app/app.component.html" />
-        <option value="$PROJECT_DIR$/src/app/components/single-question/single-question.component.ts" />
         <option value="$PROJECT_DIR$/src/app/components/my-profile/my-profile.component.ts" />
         <option value="$PROJECT_DIR$/src/app/components/single-user-list/single-user-list.component.css" />
         <option value="$PROJECT_DIR$/src/app/components/login-page/login-page.component.ts" />
@@ -189,6 +187,7 @@
         <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/src/app/components/single-user-list/single-user-list.component.html" />
         <option value="$PROJECT_DIR$/src/app/components/send-question/send-question.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/components/single-question/single-question.component.ts" />
       </list>
     </option>
   </component>
@@ -312,7 +311,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="send-question" type="462c0819:PsiDirectoryNode" />
+              <item name="my-profile" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Feedo-Feedback-App" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Feedo-Feedback-App" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="single-question" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -414,12 +421,12 @@
       <workItem from="1517772737876" duration="9354000" />
       <workItem from="1517836060144" duration="8132000" />
       <workItem from="1517929804714" duration="2236000" />
-      <workItem from="1518008796408" duration="1949000" />
+      <workItem from="1518008796408" duration="2372000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111757000" />
+    <option name="totallyTimeSpent" value="112180000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -613,13 +620,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/single-question/single-question.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/components/single-question/single-question.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
@@ -631,13 +631,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/my-profile/my-profile.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="22" column="51" lean-forward="false" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -819,6 +812,22 @@
           <folding>
             <element signature="e#0#48#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/my-profile/my-profile.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-113">
+          <caret line="22" column="51" lean-forward="false" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/single-question/single-question.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="27" column="43" lean-forward="false" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -25,7 +25,7 @@ export class SingleQuestionComponent implements OnInit {
     this.questionService.deleteSingleQuestion(this.question._id, localStorage.getItem('authtoken'))
       .subscribe(data => {
          this.toastr.successToast('Question deleted successfully.');
-         setTimeout(window.location.reload(), 3000);
+         this.router.navigate(['/search']);
       },
         err => {
           this.toastr.errorToast((err.error.description ? err.error.description : 'Unknown error occured. Please try again'));
