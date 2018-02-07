@@ -10,17 +10,17 @@
     <div *ngIf="logged" class="center">
       <div>
         <p class="home-p">Ask your friends.</p>
-        <a class="button" href="/search">Search Users</a>
+        <a class="button" routerLink="/search">Search Users</a>
       </div>
    </div>
     <div *ngIf="!logged" class="center">
       <div>
         <p class="home-p">New here?</p>
-        <a class="button" href="/register">Sign Up</a>
+        <a class="button" routerLink="/register">Sign Up</a>
       </div>
       <div>
         <p class="home-p">Already a member of <b>Feedo</b>?</p>
-        <a class="button button-rev" href="/login">Log In</a>
+        <a class="button button-rev" routerLink="/login">Log In</a>
       </div>
     </div>
   </div>
