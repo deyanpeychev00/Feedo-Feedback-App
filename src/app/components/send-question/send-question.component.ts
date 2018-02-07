@@ -50,4 +50,8 @@ export class SendQuestionComponent implements OnInit {
     }
   }
 
+  getBack(){
+    window.history.back();
+  }
+
 }
